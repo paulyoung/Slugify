@@ -1,4 +1,4 @@
-# Slugify
+# Slugify [![Build Status](https://travis-ci.org/paulyoung/Slugify.svg?branch=master)](https://travis-ci.org/paulyoung/Slugify)
 
 Convert strings into URL slugs.
 
