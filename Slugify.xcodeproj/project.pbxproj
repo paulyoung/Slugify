@@ -12,6 +12,8 @@
 		2C2657C51C4EF69400044602 /* SlugifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2657C41C4EF69400044602 /* SlugifyTests.swift */; };
 		2C2657DE1C4EF8BA00044602 /* Slugify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2657D41C4EF8BA00044602 /* Slugify.framework */; };
 		2C2657EE1C4EFB1F00044602 /* SlugifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2657C41C4EF69400044602 /* SlugifyTests.swift */; };
+		2C2657EF1C4EFB4F00044602 /* Slugify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2657EB1C4EF9BA00044602 /* Slugify.swift */; };
+		2C2657F01C4EFB4F00044602 /* Slugify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2657EB1C4EF9BA00044602 /* Slugify.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,7 @@
 		2C2657C61C4EF69400044602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C2657D41C4EF8BA00044602 /* Slugify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Slugify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2657DD1C4EF8BA00044602 /* SlugifyTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SlugifyTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C2657EB1C4EF9BA00044602 /* Slugify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slugify.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 			children = (
 				2C2657B81C4EF69400044602 /* Slugify.h */,
 				2C2657BA1C4EF69400044602 /* Info.plist */,
+				2C2657EB1C4EF9BA00044602 /* Slugify.swift */,
 			);
 			path = Slugify;
 			sourceTree = "<group>";
@@ -108,8 +112,8 @@
 		2C2657C31C4EF69400044602 /* SlugifyTests */ = {
 			isa = PBXGroup;
 			children = (
-				2C2657C41C4EF69400044602 /* SlugifyTests.swift */,
 				2C2657C61C4EF69400044602 /* Info.plist */,
+				2C2657C41C4EF69400044602 /* SlugifyTests.swift */,
 			);
 			path = SlugifyTests;
 			sourceTree = "<group>";
@@ -287,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C2657F01C4EFB4F00044602 /* Slugify.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C2657EF1C4EFB4F00044602 /* Slugify.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C2657EE1C4EFB1F00044602 /* SlugifyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -431,6 +439,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.paulyoung.Slugify;
 				PRODUCT_NAME = Slugify;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -438,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -480,6 +490,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -493,6 +504,7 @@
 				PRODUCT_NAME = Slugify;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -501,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
