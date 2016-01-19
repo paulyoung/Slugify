@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -e
+
+xcodebuild -project Slugify.xcodeproj -scheme Slugify-Mac -sdk macosx clean test
+xcodebuild -project Slugify.xcodeproj -scheme Slugify-iOS -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6s,OS=9.0" clean test
