@@ -4,12 +4,12 @@ extension String {
     private static let allowedCharacters = NSCharacterSet(charactersInString: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-")
     
     public func slugify() -> String {
-        var string = self
+        let cocoaString = NSMutableString(string: self) as CFMutableStringRef
+        CFStringTransform(cocoaString, nil, kCFStringTransformToLatin, false)
+        CFStringTransform(cocoaString, nil, kCFStringTransformStripCombiningMarks, false)
+        CFStringLowercase(cocoaString, .None)
         
-        string = string
-            .stringByApplyingTransform(NSStringTransformToLatin, reverse: false)?
-            .stringByApplyingTransform(NSStringTransformStripDiacritics, reverse: false)?
-            .localizedLowercaseString ?? string
+        var string = String(cocoaString)
         
         while let range = string.rangeOfCharacterFromSet(String.allowedCharacters.invertedSet) {
             string = string
