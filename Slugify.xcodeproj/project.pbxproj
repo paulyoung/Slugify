@@ -10,6 +10,7 @@
 		2C2657B91C4EF69400044602 /* Slugify.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C2657B81C4EF69400044602 /* Slugify.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C2657C01C4EF69400044602 /* Slugify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2657B51C4EF69400044602 /* Slugify.framework */; };
 		2C2657C51C4EF69400044602 /* SlugifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2657C41C4EF69400044602 /* SlugifyTests.swift */; };
+		2C2657DE1C4EF8BA00044602 /* Slugify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2657D41C4EF8BA00044602 /* Slugify.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -18,6 +19,13 @@
 			containerPortal = 2C2657AC1C4EF69400044602 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2C2657B41C4EF69400044602;
+			remoteInfo = Slugify;
+		};
+		2C2657DF1C4EF8BA00044602 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C2657AC1C4EF69400044602 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C2657D31C4EF8BA00044602;
 			remoteInfo = Slugify;
 		};
 /* End PBXContainerItemProxy section */
@@ -29,6 +37,8 @@
 		2C2657BF1C4EF69400044602 /* SlugifyTests-Mac.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SlugifyTests-Mac.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2657C41C4EF69400044602 /* SlugifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlugifyTests.swift; sourceTree = "<group>"; };
 		2C2657C61C4EF69400044602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C2657D41C4EF8BA00044602 /* Slugify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Slugify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C2657DD1C4EF8BA00044602 /* SlugifyTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SlugifyTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +54,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C2657C01C4EF69400044602 /* Slugify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2657D01C4EF8BA00044602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2657DA1C4EF8BA00044602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2657DE1C4EF8BA00044602 /* Slugify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +89,8 @@
 			children = (
 				2C2657B51C4EF69400044602 /* Slugify.framework */,
 				2C2657BF1C4EF69400044602 /* SlugifyTests-Mac.xctest */,
+				2C2657D41C4EF8BA00044602 /* Slugify.framework */,
+				2C2657DD1C4EF8BA00044602 /* SlugifyTests-iOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +121,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C2657B91C4EF69400044602 /* Slugify.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2657D11C4EF8BA00044602 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +170,42 @@
 			productReference = 2C2657BF1C4EF69400044602 /* SlugifyTests-Mac.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2C2657D31C4EF8BA00044602 /* Slugify-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C2657E51C4EF8BA00044602 /* Build configuration list for PBXNativeTarget "Slugify-iOS" */;
+			buildPhases = (
+				2C2657CF1C4EF8BA00044602 /* Sources */,
+				2C2657D01C4EF8BA00044602 /* Frameworks */,
+				2C2657D11C4EF8BA00044602 /* Headers */,
+				2C2657D21C4EF8BA00044602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Slugify-iOS";
+			productName = Slugify;
+			productReference = 2C2657D41C4EF8BA00044602 /* Slugify.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2C2657DC1C4EF8BA00044602 /* SlugifyTests-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C2657E81C4EF8BA00044602 /* Build configuration list for PBXNativeTarget "SlugifyTests-iOS" */;
+			buildPhases = (
+				2C2657D91C4EF8BA00044602 /* Sources */,
+				2C2657DA1C4EF8BA00044602 /* Frameworks */,
+				2C2657DB1C4EF8BA00044602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C2657E01C4EF8BA00044602 /* PBXTargetDependency */,
+			);
+			name = "SlugifyTests-iOS";
+			productName = SlugifyTests;
+			productReference = 2C2657DD1C4EF8BA00044602 /* SlugifyTests-iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -152,6 +222,12 @@
 					2C2657BE1C4EF69400044602 = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					2C2657D31C4EF8BA00044602 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					2C2657DC1C4EF8BA00044602 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 				};
 			};
 			buildConfigurationList = 2C2657AF1C4EF69400044602 /* Build configuration list for PBXProject "Slugify" */;
@@ -166,6 +242,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				2C2657D31C4EF8BA00044602 /* Slugify-iOS */,
+				2C2657DC1C4EF8BA00044602 /* SlugifyTests-iOS */,
 				2C2657B41C4EF69400044602 /* Slugify-Mac */,
 				2C2657BE1C4EF69400044602 /* SlugifyTests-Mac */,
 			);
@@ -181,6 +259,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2C2657BD1C4EF69400044602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2657D21C4EF8BA00044602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2657DB1C4EF8BA00044602 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -205,6 +297,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2C2657CF1C4EF8BA00044602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2657D91C4EF8BA00044602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -212,6 +318,11 @@
 			isa = PBXTargetDependency;
 			target = 2C2657B41C4EF69400044602 /* Slugify-Mac */;
 			targetProxy = 2C2657C11C4EF69400044602 /* PBXContainerItemProxy */;
+		};
+		2C2657E01C4EF8BA00044602 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C2657D31C4EF8BA00044602 /* Slugify-iOS */;
+			targetProxy = 2C2657DF1C4EF8BA00044602 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -360,6 +471,74 @@
 			};
 			name = Release;
 		};
+		2C2657E61C4EF8BA00044602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Slugify/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.paulyoung.Slugify;
+				PRODUCT_NAME = Slugify;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C2657E71C4EF8BA00044602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Slugify/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.paulyoung.Slugify;
+				PRODUCT_NAME = Slugify;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C2657E91C4EF8BA00044602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SlugifyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.paulyoung.SlugifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2C2657EA1C4EF8BA00044602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SlugifyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.paulyoung.SlugifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -385,6 +564,22 @@
 			buildConfigurations = (
 				2C2657CD1C4EF69400044602 /* Debug */,
 				2C2657CE1C4EF69400044602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2C2657E51C4EF8BA00044602 /* Build configuration list for PBXNativeTarget "Slugify-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C2657E61C4EF8BA00044602 /* Debug */,
+				2C2657E71C4EF8BA00044602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2C2657E81C4EF8BA00044602 /* Build configuration list for PBXNativeTarget "SlugifyTests-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C2657E91C4EF8BA00044602 /* Debug */,
+				2C2657EA1C4EF8BA00044602 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
