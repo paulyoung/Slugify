@@ -11,6 +11,7 @@
 		2C2657C01C4EF69400044602 /* Slugify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2657B51C4EF69400044602 /* Slugify.framework */; };
 		2C2657C51C4EF69400044602 /* SlugifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2657C41C4EF69400044602 /* SlugifyTests.swift */; };
 		2C2657DE1C4EF8BA00044602 /* Slugify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2657D41C4EF8BA00044602 /* Slugify.framework */; };
+		2C2657EE1C4EFB1F00044602 /* SlugifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2657C41C4EF69400044602 /* SlugifyTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
