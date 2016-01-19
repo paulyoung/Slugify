@@ -26,7 +26,7 @@
 		2C2657B51C4EF69400044602 /* Slugify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Slugify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2657B81C4EF69400044602 /* Slugify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Slugify.h; sourceTree = "<group>"; };
 		2C2657BA1C4EF69400044602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C2657BF1C4EF69400044602 /* SlugifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlugifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C2657BF1C4EF69400044602 /* SlugifyTests-Mac.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SlugifyTests-Mac.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2657C41C4EF69400044602 /* SlugifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlugifyTests.swift; sourceTree = "<group>"; };
 		2C2657C61C4EF69400044602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,7 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				2C2657B51C4EF69400044602 /* Slugify.framework */,
-				2C2657BF1C4EF69400044602 /* SlugifyTests.xctest */,
+				2C2657BF1C4EF69400044602 /* SlugifyTests-Mac.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,9 +100,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2C2657B41C4EF69400044602 /* Slugify */ = {
+		2C2657B41C4EF69400044602 /* Slugify-Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C2657C91C4EF69400044602 /* Build configuration list for PBXNativeTarget "Slugify" */;
+			buildConfigurationList = 2C2657C91C4EF69400044602 /* Build configuration list for PBXNativeTarget "Slugify-Mac" */;
 			buildPhases = (
 				2C2657B01C4EF69400044602 /* Sources */,
 				2C2657B11C4EF69400044602 /* Frameworks */,
@@ -113,14 +113,14 @@
 			);
 			dependencies = (
 			);
-			name = Slugify;
+			name = "Slugify-Mac";
 			productName = Slugify;
 			productReference = 2C2657B51C4EF69400044602 /* Slugify.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2C2657BE1C4EF69400044602 /* SlugifyTests */ = {
+		2C2657BE1C4EF69400044602 /* SlugifyTests-Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C2657CC1C4EF69400044602 /* Build configuration list for PBXNativeTarget "SlugifyTests" */;
+			buildConfigurationList = 2C2657CC1C4EF69400044602 /* Build configuration list for PBXNativeTarget "SlugifyTests-Mac" */;
 			buildPhases = (
 				2C2657BB1C4EF69400044602 /* Sources */,
 				2C2657BC1C4EF69400044602 /* Frameworks */,
@@ -131,9 +131,9 @@
 			dependencies = (
 				2C2657C21C4EF69400044602 /* PBXTargetDependency */,
 			);
-			name = SlugifyTests;
+			name = "SlugifyTests-Mac";
 			productName = SlugifyTests;
-			productReference = 2C2657BF1C4EF69400044602 /* SlugifyTests.xctest */;
+			productReference = 2C2657BF1C4EF69400044602 /* SlugifyTests-Mac.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -166,8 +166,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C2657B41C4EF69400044602 /* Slugify */,
-				2C2657BE1C4EF69400044602 /* SlugifyTests */,
+				2C2657B41C4EF69400044602 /* Slugify-Mac */,
+				2C2657BE1C4EF69400044602 /* SlugifyTests-Mac */,
 			);
 		};
 /* End PBXProject section */
@@ -210,7 +210,7 @@
 /* Begin PBXTargetDependency section */
 		2C2657C21C4EF69400044602 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2C2657B41C4EF69400044602 /* Slugify */;
+			target = 2C2657B41C4EF69400044602 /* Slugify-Mac */;
 			targetProxy = 2C2657C11C4EF69400044602 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -315,7 +315,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.paulyoung.Slugify;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Slugify;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -333,7 +333,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.paulyoung.Slugify;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Slugify;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -372,7 +372,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C2657C91C4EF69400044602 /* Build configuration list for PBXNativeTarget "Slugify" */ = {
+		2C2657C91C4EF69400044602 /* Build configuration list for PBXNativeTarget "Slugify-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C2657CA1C4EF69400044602 /* Debug */,
@@ -380,7 +380,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		2C2657CC1C4EF69400044602 /* Build configuration list for PBXNativeTarget "SlugifyTests" */ = {
+		2C2657CC1C4EF69400044602 /* Build configuration list for PBXNativeTarget "SlugifyTests-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C2657CD1C4EF69400044602 /* Debug */,
